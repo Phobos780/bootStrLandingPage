@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS / CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Bootstrap Cours</title>
+  </head>
+  <body>
+
+    <!-- NAV BAR -->
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg "><!--  fixed-top lezione: 22 -->
+      <div class="container">  
+        <a class="navbar-brand" href="#">DM Conference</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Esperti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="jumbotron text-md-center jumbotron-fluid"> <!-- text-md-center = testo al centro per gli schermi md(mediumDisplay) -->
+      <div class="container">
+        <h1 class="display-4">Digital marketing Conference</h1>
+        <p class="lead">La conferenza di digital marketing piu famosa al mondo!</p>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#registration" class="btn btn-primary btn-lg">Escriviti</button>
+          <a class="btn btn-success btn-lg" href="#speakers" role="button">Gli esperti</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      
+      <div class="row pt-2">
+        <div class="col-md-6 order-1"><!--"-md(mediumDisplay)" + "-6" = 6 colonne -->
+          <h3 >Il Digital Marketing</h3>
+          <img src="../boostrap-landingPage/images/marketing.jpg" class="img-fluid rounded" alt="marketing"><!-- /rounded/ serve per arotondare gli angoli della immagine --> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p> 
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+        </div> 
+        <div class="col-md-3 "><!--"-md(mediumDisplay)" + "-3" = 3 colonne -->
+          <h3>Gli esperti</h3> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p> <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> 
+        </div>
+        <div class="col-md-3 order-2"><!--"-md(mediumDisplay)" + "-3" = 3 colonne -->
+
+          <h3>Argomenti della conferencza</h3> 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Programming Languges.
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Google ADV.
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Facesbook School.
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <!-- SECONDA SEZZIONE -->
+      <div id="speakers" class="speakers">       
+        <div class="row pt-5"><!-- pt / p = sta per padding, t = top, 5 = la distanza da 1 a 5. quindi pt-5 = padding top 5px -->
+          <h2 class="text-center">Gli esperti</h2>
+            <div class="col-md-4 col-lg-3"><!-- col = colonna / lg = per gli schermi large / 3 = ogni colonna deve prendere 3 spazzi(in una griglia da 12col) . idem per md = large screen / 4 = deve prendere 4 spzzi su 12. || quindi: prima col = colonna, poi md( o lg, o xl) e quanti colonne (su 12) deve occuppare. -->
+              <div class="card">
+                <img src="../boostrap-landingPage/images/amalia.png" class="card-img-top" alt="Amalia">
+                <div class="card-body">
+                  <h4>Amalia Freglioje</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card">
+                <img src="../boostrap-landingPage/images/ciccio.png" class="card-img-top" alt="Amalia">
+                <div class="card-body">
+                  <h4>Ciccio Pasticcio</h4>
+                  <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card">
+                <img src="../boostrap-landingPage/images/herbert.png" class="card-img-top" alt="Amalia">
+                <div class="card-body">
+                  <h4>Pinco Pallo</h4>
+                  <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+              </div>
+            </div> 
+
+          <div class="col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../boostrap-landingPage/images/pinco.png" class="card-img-top" alt="Amalia">
+              <div class="card-body">
+                <h4>Anna Pannocchia</h4>
+                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../boostrap-landingPage/images/pinco2.png" class="card-img-top" alt="Amalia">
+              <div class="card-body">
+                <h4>Pinco Pallino</h4>
+                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+              </div>
+            </div>
+          </div>
+              
+          <div class="col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../boostrap-landingPage/images/ciccio.png" class="card-img-top" alt="Amalia">
+              <div class="card-body">
+                <h4>Herbert Ballerina</h4>
+                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <!--FOTER-->
+      <hr class="mt-5">
+      <div id="about" class="row align-items-center">
+          <div class="col">
+            <p><strong>About Lacerba</strong></p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+          </div>
+          <div class="col">
+              <p><strong>Vuoi ricevere la newsletter?</strong></p>
+              <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Email">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Iscriviti</button>
+                  </span>   
+              </div>   
+            </div>
+          </div>
+        <hr class="md-5">
+
+        <!-- esercizio FOOTER -->
+        <div class="row m-4 align-items-center"><!-- m-4 = margin 4px su tutti i lati / align-items-center = testo aliniato al centro orizontalmente -->
+
+          <div class="col-md-2 text-md-start text-center">
+            <a href="#">COMUNITY</a>
+          </div>
+
+          <div class="col-md text-center text-lg-start ">
+            <!-- Example split danger button -->
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger">Action</button>
+              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">AREA CONFERENZA</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">CSS</a></li>
+                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#"><HTML>HTML</HTML></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">SQL</a></li>
+              </ul>
+            </div>            
+          </div>
+          
+          <div class="col-md text-center text-md-end">
+            <p> &copy; 2017 Digital Marketing con Lacerba </p><!-- &COPY; = il segno di copyrighte(la C nel cerchietto ) -->
+          </div>
+        </div>
+        <!--FOTER END-->
+    </div>
+
+            <!-- Modal / MENU A COMPARSA del bottone "escriveti ess: 19 modali" -->
+    <div class="modal fade" id="registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><!--miracomando nel pulsante dove vuoi aggiungere il menu a comparsa devi agg un pezzo di codice qui sopra. se crei un secondo pulsante a comarsa di iscrizione o simile devi cambiare il nome del ** id ** (registration) qui soppra. lezz:21 -->
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Escriveti alla news latter.</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- FORMS -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">First and last name</span>
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Acetto le condizioni.</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <!-- FORMS END -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *** MIRACOMANDO TI SERVE OPZIONE 2 *** -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

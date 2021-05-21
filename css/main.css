@@ -1,0 +1,24 @@
+
+
+.navbar {
+    background: rgba(43, 112, 3, 0.5);
+}
+
+.jumbotron {
+    padding: 120px 0;
+    background: linear-gradient(rgb( 0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url("../images/conf.jpeg") no-repeat center / cover;
+    color: antiquewhite;
+}
+
+.speakers .card {
+    margin-bottom: 10px;
+}
+
+.speakers {
+    padding: 50px 0;
+
+}
+
+.speakers .card-body {
+    height: 215px;/*215px = 198content + 16padding, circa*/
+}
